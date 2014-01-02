@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Oracle | Pressing Words]]></title>
+  <link href="http://blog.mikeleon.com/blog/categories/oracle/atom.xml" rel="self"/>
+  <link href="http://blog.mikeleon.com/"/>
+  <updated>2014-01-02T22:16:34+00:00</updated>
+  <id>http://blog.mikeleon.com/</id>
+  <author>
+    <name><![CDATA[Michael]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Last day at OpenWorld...uncle]]></title>
+    <link href="http://blog.mikeleon.com/blog/2006/10/26/last-day-at-openworlduncle/"/>
+    <updated>2006-10-26T00:00:00+00:00</updated>
+    <id>http://blog.mikeleon.com/blog/2006/10/26/last-day-at-openworlduncle</id>
+    <content type="html"><![CDATA[<p>No keynotes today &ndash; just sessions and goodbyes.  Lots of attendees have already gone home.</p>
+
+<p>My first session this morning was supposed to be about the Oracle data pump &ndash; a newer, faster way to do imports and exports on Oracle db&rsquo;s.  What it turned out to be though was an hour of trying really hard to decipher what the speaker was saying.  No offense intended but the presenter had a very thick accent &ndash; Indian I think.</p>
+
+<p>Next session was about upgrading to 10g.  There&rsquo;s a nify utility which helps simplify an upgrade, automatically dealing with lots of caveats and exceptions: DBUA (Database Upgrade Assistant).</p>
+
+<p>Then two worthwhile sessions on tuning and performance for the db.  First was presented by <a href="http://mikerault.blogspot.com/">Mike Ault</a> from Quest, second came from <a href="http://www.danhotka.com">Dan Hotka</a>.  Lots of recommendations for using the V$ tables, binds, and indexes.</p>
+
+<p>My final session is on geospatial data warehouses and ETL.  This one is still going but topics include Oracle Spatial, ESRI, ETL designs, and error reporting.</p>
+
+<p>Goodbye OpenWorld.  San Francisco was fun with perfect weather!
+<img class="center" src="/images/oraclelounge.jpg" title="&lsquo;Oracle lounge&rsquo; &lsquo;images&rsquo;" ></p>
+
+<p>Time to go home to the snow.
+<img class="left" src="/images/bouldersnow.jpg" title="&lsquo;Boulder snow&rsquo; &lsquo;images&rsquo;" ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 4 and Oracle Linux]]></title>
+    <link href="http://blog.mikeleon.com/blog/2006/10/26/day-4-and-oracle-linux/"/>
+    <updated>2006-10-26T00:00:00+00:00</updated>
+    <id>http://blog.mikeleon.com/blog/2006/10/26/day-4-and-oracle-linux</id>
+    <content type="html"><![CDATA[<p>To my great surprise, Larry Ellison, Oracle CEO and president, spent his hour-long keynote talking about linux.  (I have to wonder how much geeked out tech training these keynote executives need to subject themselves to in order to speak the way they do.  You can sense that they&rsquo;re fish out of water, but it really is hard to tell if you don&rsquo;t pay close attention.)  He targeted Redhat specifically saying how much cheaper and better the Oracle linux support would be.  Oracle went as far as to demo a 1mb download that allows for a switch from Redhat to &ldquo;Unbreakable Linux 2.0&rdquo; in minutes.  This is flat out war in my mind.  Oracle sees direct competition in Redhat &ndash; most likely stemming from Redhat&rsquo;s recent acquisition of middleware software in the form of JBoss.  And remember just a few days ago they said they want to own the whole &lsquo;stack&rsquo;?  Well the &lsquo;stack&rsquo; does include the OS after all.  I wouldn&rsquo;t be surprised if this is all intended to allow for a quick, easy, and cheap acquisition of Redhat by Oracle.</p>
+
+<p>One might think that attending an Oracle OpenWorld conference (the largest conference in the industry I bet) would have the effect of making one favor Oracle products.  Well, I have to admit that earlier this week I was looking at ways to incorporate some Oracle middleware and take advantage of 10g/11g db features.  After all, I came here for a reason right?  The reason was initially to learn more about Oracle Enterprise db (9i and 10g) in order to help me support, maintain, and develop these products.  I have been trying to move away from Oracle for a while and have kept running into necessary features not available from alternatives.  So I came in with an open mind: maybe Oracle&rsquo;s not so bad after all; maybe they have some worthwhile products.  Now, I just have a bad feeling about all that is Oracle.</p>
+
+<p>The afternoon session on &lsquo;open source myths and truths&rsquo; was interesting.  They showed a perspective on open source I hadn&rsquo;t seen &ndash; correlating adoption levels in relation to the business requirements that exist for each type of software.  Proprietary software tends to over-develop as adoption levels off, adding features that aren&rsquo;t required by the business or end user.  And open source software has historically been lacking in features to the point where it didn&rsquo;t meet the business requirements &ndash; and so had low adoption as a result.  Well for certain products such as apache and linux, open source  has met the business requirements and has a very strong adoption level.  And for most other product categories, there is a strong trend moving towards higher adoption  levels and more complete feature sets.  The monkey wrench thrown into all of this is the fact that most major companies are acquiring or contributing to open source software.  In the end, the software will be excellent and free.  What we&rsquo;ll pay for is added value or service that gets bundled with the software &ndash; possibly in the form of proprietary code.</p>
+
+<p>Then &lsquo;60 Oracle db security tips in 60 minutes&rsquo; was somewhat helpful.  I need to get my hands on this presentation to get the full details on those tips.</p>
+
+<p>And the &lsquo;web services state of the union&rsquo; largely came to the audience through Oracle-colored glasses.  But there was mention of open standards and flexibility of architecture or language.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Live and learn]]></title>
+    <link href="http://blog.mikeleon.com/blog/2006/10/25/live-and-learn/"/>
+    <updated>2006-10-25T00:00:00+00:00</updated>
+    <id>http://blog.mikeleon.com/blog/2006/10/25/live-and-learn</id>
+    <content type="html"><![CDATA[<p> I&rsquo;m almost ashamed to admit my crappy experience over the last 14 hours or so.  I wasn&rsquo;t allowed into the concert (after taking the bus there and all), and I missed out on dinner and drinks.  It turns out that when I first registered, I was confused for someone else with the same name as me.  So I received a lesser conference pass as a result.  So I&rsquo;ve apparently been missing out on some &ldquo;extreme&rdquo; sessions, free lunches, dinners, and of course the concert. Oh well, it was only Elton John after all.</p>
+
+<p>I should have realized all this when my ID had the wrong company &ndash; I just figured it was a typo or something.  And this being my first Oracle conference, I didn&rsquo;t really know what to expect.  I straightened everything out this morning and I now have the full conference pass with bag, literature, etc.</p>
+
+<p>More product info, marketing from Oracle this morning.  Now listening to Jonathan Schwartz (Sun&rsquo;s CEO).  Then I&rsquo;m off for drinks at Thirsty Bear to prepare for Larry Ellis' keynote.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OpenWorld, Day 3]]></title>
+    <link href="http://blog.mikeleon.com/blog/2006/10/24/openworld-day-3/"/>
+    <updated>2006-10-24T00:00:00+00:00</updated>
+    <id>http://blog.mikeleon.com/blog/2006/10/24/openworld-day-3</id>
+    <content type="html"><![CDATA[<p>Mark Hurd kicked off the day talking about how HP is in the middle of some house cleaning as far as their internal IT goes.  They&rsquo;re going to fewer technologies, applications, vendors in an effort to simplify and become more efficient.  And they want to use this model for all of their partners, clients as well.</p>
+
+<p>Then Oracle sr. vp talked a lot about middleware (including <a href="http://www.it-eye.nl/weblog/2006/10/24/oracle-open-world-update-6-webcenter-released/">WebCenter</a>) &ndash; Oracle products for sales, marketing, communication, etc.  E-Business Suite looks decent for use as an online ordering business solution.</p>
+
+<p>I attended one session labeled &ldquo;Content Management for the Enterprise&rdquo; which turned out to be about &ldquo;Content DB&rdquo; which is meant to replace file servers and can be used for email attachments.  This is not a CMS solution from what I could tell &ndash; oh well.</p>
+
+<p>Then my brain gave out and needed a break.  I went to lunch at a recommended place called Magnolia&rsquo;s &ndash; on Haight st. and  Masonic ave.  Took a stroll through Buena Vista Park.  Then I went through the two exhibition halls and listened to John Chamber&rsquo;s (Cisco&rsquo;s pres and CEO) talk about his vision of the future&hellip;each of us communicating in our preferred media (voice, video, email) and the recipient getting the message in their preferred media.  He  sees the network becoming more integrated with the application&hellip;</p>
+
+<p>This conference has a lot to offer and not enough time to take it all in.</p>
+
+<p>Tonight: Elton John in concert and hopefully more free food and drinks.</p>
+
+<p><a href="http://www.rittman.net/2006/10/13/oracle-open-world-blogger-meetup-attendee-list/">More OpenWorld blogs here</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2nd day at OpenWorld]]></title>
+    <link href="http://blog.mikeleon.com/blog/2006/10/23/2nd-day-at-openworld/"/>
+    <updated>2006-10-23T00:00:00+00:00</updated>
+    <id>http://blog.mikeleon.com/blog/2006/10/23/2nd-day-at-openworld</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m starting to see why so many bean bags are made available &ndash; sleep deprivation seems common around here.  Quick synopsis for today&hellip;</p>
+
+<p>Morning keynotes from AMD&rsquo;s chairman and CEO Hector de J. Ruiz, and Oracle&rsquo;s exec vp of server tech Chuck Rozwat.  More hype here, some of it interesting (<a href="http://oss.oracle.com/">open source integration in Oracle</a>), most of it expected.</p>
+
+<p>Data Warehouse session.  Speaker from Keyrus in Toronto claims that <a href="http://en.wikipedia.org/wiki/Extract,_transform,_load" title="Extract, Transform, and Load">ETL</a> is where 90% of our time is spent.  His favorite tool is <a href="http://ibm.ascential.com/products/datastage.html">IBM&rsquo;s DataStage</a>, other tools for working with ETL include <a href="http://www.oracle.com/technology/products/warehouse/index.html" title="Oracle Warehouse Builder">OWB</a>, <a href="http://www.informatica.com/products/powercenter/default.htm">Informatica&rsquo;s PowerCenter</a>, or just PL/SQL.</p>
+
+<p>Michael Dell&rsquo;s keynote shared Oracle&rsquo;s theme of integration and commonality across product lines.  The future includes energy reductions, heat reductions, virtualization, and more processor cores.</p>
+
+<p>Patricia McElroy&rsquo;s afternoon session on Streams was a bit dry with lots of walk-outs.  What do Streams add to replication?  Notifications, rule-based actions per target, cross-platform targets (Streams can modify Sybase, MS SQL, etc).  It&rsquo;s push rather than pull technology&hellip;</p>
+
+<p>Up next: &ldquo;OTN Night at the Oasis&rdquo;.  Free food, drinks, and lame entertainment.</p>
+
+<p>A more thorough blog about OpenWorld can be found on <a href="http://blogs.oracle.com/otn/">Justin Kestelyn&rsquo;s OTN blog</a>; a compilation of related blogs are <a href="http://www.oracle.com/technology/events/oracle-openworld-2006/oow_blogindex.html">here</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
