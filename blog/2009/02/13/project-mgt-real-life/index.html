@@ -23,9 +23,9 @@
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Pressing Words" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Pressing Words" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -47,13 +47,6 @@
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:blog.mikeleon.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
   
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
@@ -123,7 +116,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.mikeleon.com/blog/2009/02/13/project-mgt-real-life/" data-via="m_leon" data-counturl="http://blog.mikeleon.com/blog/2009/02/13/project-mgt-real-life/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.mikeleon.com/blog/2009/02/13/project-mgt-real-life/" data-via="" data-counturl="http://blog.mikeleon.com/blog/2009/02/13/project-mgt-real-life/" >Tweet</a>
   
   
   
@@ -135,7 +128,7 @@
         <a class="basic-alignment left" href="/blog/2009/01/30/osx-sleep-hibernate/" title="Previous Post: OS X sleep and Hibernate">&laquo; OS X sleep and Hibernate</a>
       
       
-        <a class="basic-alignment right" href="/blog/2009/03/03/barry-schwartz-loss-of-wisdom/" title="next Post: Barry Schwartz on our loss of wisdom">Barry Schwartz on our loss of wisdom &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2009/03/03/barry-schwartz-loss-of-wisdom/" title="Next Post: Barry Schwartz on our loss of wisdom">Barry Schwartz on our loss of wisdom &raquo;</a>
       
     </p>
   </footer>
@@ -150,11 +143,11 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/01/04/tengo-unas-ganas/">Tengo unas ganas..</a>
+        <a href="/blog/2013/01/04/tengo-unas-ganas/">Tengo Unas Ganas..</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/27/the-holstee-manifesto/">the holstee manifesto..</a>
+        <a href="/blog/2012/03/27/the-holstee-manifesto/">The Holstee Manifesto..</a>
       </li>
     
       <li class="post">
@@ -162,31 +155,14 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2011/09/01/decide-to-be-happy-and-the-world-will-beat-a-path/">Decide to be happy</a>
+        <a href="/blog/2011/09/01/decide-to-be-happy-and-the-world-will-beat-a-path/">Decide to Be Happy</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/07/19/some-are-better-loved-from-a-distance-for-a/">Some are better..</a>
+        <a href="/blog/2011/07/19/some-are-better-loved-from-a-distance-for-a/">Some Are Better..</a>
       </li>
     
   </ul>
-</section>
-
-
-<section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating...</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("m_leon", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/m_leon" class="twitter-follow-button" data-show-count="false">Follow @m_leon</a>
-  
 </section>
 
 
@@ -218,7 +194,7 @@
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>
