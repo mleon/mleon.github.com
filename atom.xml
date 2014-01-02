@@ -4,7 +4,7 @@
   <title><![CDATA[Pressing Words]]></title>
   <link href="http://blog.mikeleon.com/atom.xml" rel="self"/>
   <link href="http://blog.mikeleon.com/"/>
-  <updated>2014-01-02T23:17:01+00:00</updated>
+  <updated>2014-01-02T23:41:10+00:00</updated>
   <id>http://blog.mikeleon.com/</id>
   <author>
     <name><![CDATA[Michael]]></name>
@@ -29,7 +29,7 @@
     <link href="http://blog.mikeleon.com/blog/2012/03/27/the-holstee-manifesto/"/>
     <updated>2012-03-27T09:45:32+00:00</updated>
     <id>http://blog.mikeleon.com/blog/2012/03/27/the-holstee-manifesto</id>
-    <content type="html"><![CDATA[<img class="left" src="http://blog.mikeleon.com/images/holstee_manifesto.jpg" title="Holstee Manifesto" alt="images">
+    <content type="html"><![CDATA[<img src='http://blog.mikeleon.com/images/holstee_manifesto.jpg' />
 ]]></content>
   </entry>
   
@@ -160,7 +160,7 @@
     <link href="http://blog.mikeleon.com/blog/2009/06/01/the-kids-ride-a-rickshaw-while-dad-lays-sod/"/>
     <updated>2009-06-01T00:37:33+00:00</updated>
     <id>http://blog.mikeleon.com/blog/2009/06/01/the-kids-ride-a-rickshaw-while-dad-lays-sod</id>
-    <content type="html"><![CDATA[<img src="http://25.media.tumblr.com/LCSiQozY4o6csedvzT8rrfkoo1_500.jpg"/>
+    <content type="html"><![CDATA[<img src="http://blog.mikeleon.com/images/kids_rickshaw.jpg"/>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Oracle | Pressing Words]]></title>
   <link href="http://blog.mikeleon.com/blog/categories/oracle/atom.xml" rel="self"/>
   <link href="http://blog.mikeleon.com/"/>
-  <updated>2014-01-02T23:17:01+00:00</updated>
+  <updated>2014-01-02T23:41:10+00:00</updated>
   <id>http://blog.mikeleon.com/</id>
   <author>
     <name><![CDATA[Michael]]></name>
@@ -29,10 +29,12 @@
 <p>My final session is on geospatial data warehouses and ETL.  This one is still going but topics include Oracle Spatial, ESRI, ETL designs, and error reporting.</p>
 
 <p>Goodbye OpenWorld.  San Francisco was fun with perfect weather!
-<img class="center" src="/images/oraclelounge.jpg" title="&lsquo;Oracle lounge&rsquo; &lsquo;images&rsquo;" ></p>
+<img src="http://blog.mikeleon.com/images/oraclelounge.jpg"/></p>
 
-<p>Time to go home to the snow.
-<img class="left" src="/images/bouldersnow.jpg" title="&lsquo;Boulder snow&rsquo; &lsquo;images&rsquo;" ></p>
+<br>Time to go home to the snow.
+
+
+<p><img src="http://blog.mikeleon.com/images/bouldersnow.jpg"/></p>
 ]]></content>
   </entry>
   
