@@ -18,12 +18,12 @@
     <link href="http://blog.mikeleon.com/blog/2006/11/10/how-to-boot-acronis-true-image-from-a-usb-drive/"/>
     <updated>2006-11-10T00:00:00+00:00</updated>
     <id>http://blog.mikeleon.com/blog/2006/11/10/how-to-boot-acronis-true-image-from-a-usb-drive</id>
-    <content type="html"><![CDATA[<p>I&rsquo;ve struggled quite a bit with this.  But I&rsquo;ve always gotten it to work.  This time I decided to save myself from future anguish by documenting the steps.  It might even save you from some extended head scratching.  Here&rsquo;s how to use a common usb key / flash drive / thumb drive to boot Acronis True Image (this was done using True Image v9.0 build 2337).  The splash screen won&rsquo;t display, but the fully functional True Image program should load just fine.  (~25MB needed)</p>
+    <content type="html"><![CDATA[<p>I've struggled quite a bit with this.  But I've always gotten it to work.  This time I decided to save myself from future anguish by documenting the steps.  It might even save you from some extended head scratching.  Here's how to use a common usb key / flash drive / thumb drive to boot Acronis True Image (this was done using True Image v9.0 build 2337).  The splash screen won't display, but the fully functional True Image program should load just fine.  (~25MB needed)</p>
 
 <ol>
 <li><p>Make sure your BIOS supports booting from USB, and set it to do so.</p></li>
-<li><p>Backup your data from the USB drive &ndash; it&rsquo;ll be wiped clean in the next step.</p></li>
-<li><p>Run the &lsquo;<a href="http://h18000.www1.hp.com/support/files/serveroptions/us/download/23839.html">HP Drive Key Boot Utility</a>&rsquo; (from Windows) and format the usb drive as follows:</p></li>
+<li><p>Backup your data from the USB drive - it'll be wiped clean in the next step.</p></li>
+<li><p>Run the '<a href="http://h18000.www1.hp.com/support/files/serveroptions/us/download/23839.html">HP Drive Key Boot Utility</a>' (from Windows) and format the usb drive as follows:</p></li>
 </ol>
 
 
@@ -36,7 +36,7 @@
 
 
 <ol>
-<li>Copy these two files from the True Image boot media &lsquo;Recovery Manager&rsquo; folder into the usb root directory.  (You may need to install True Image and create a bootable CD or floppy disk if you haven&rsquo;t already done so.)</li>
+<li>Copy these two files from the True Image boot media 'Recovery Manager' folder into the usb root directory.  (You may need to install True Image and create a bootable CD or floppy disk if you haven't already done so.)</li>
 </ol>
 
 
@@ -47,7 +47,7 @@
 
 
 <ol>
-<li>Create the file &ldquo;syslinux.cfg&rdquo; in the usb root directory with the following contents:
+<li>Create the file "syslinux.cfg" in the usb root directory with the following contents:
 <code> </code></li>
 </ol>
 
@@ -62,7 +62,7 @@
 
 <p>That should do it.  Your USB drive should now boot into True Image.  Happy Imaging.</p>
 
-<p>P.S. Wouldn&rsquo;t you know it, after writing all this I decided to try the latest TrueImage Home v10 (build 4,871) and guess what.  That version&rsquo;s Boot Builder creates a bootable flash drive with True Image just fine.  Thanks for fixing this Acronis!</p>
+<p>P.S. Wouldn't you know it, after writing all this I decided to try the latest TrueImage Home v10 (build 4,871) and guess what.  That version's Boot Builder creates a bootable flash drive with True Image just fine.  Thanks for fixing this Acronis!</p>
 ]]></content>
   </entry>
   
