@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Pressing Words</title>
+  <meta name="author" content="Michael">
+
+  
+  <meta name="description" content="I&#8217;ve struggled quite a bit with this. But I&#8217;ve always gotten it to work. This time I decided to save myself from future anguish by &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.mikeleon.com/blog/page/4">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Pressing Words" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pressing Words</a></h1>
+  
+    <h2>random thoughts and ramblings</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.mikeleon.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/11/10/how-to-boot-acronis-true-image-from-a-usb-drive/">How to Boot Acronis True Image From a USB Drive</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-11-10T00:00:00+00:00" pubdate data-updated="true">Nov 10<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">I&#8217;ve struggled quite a bit with this.  But I&#8217;ve always gotten it to work.  This time I decided to save myself from future anguish by documenting the steps.  It might even save you from some extended head scratching.  Here&#8217;s how to use a common usb key / flash drive / thumb drive to boot Acronis True Image (this was done using True Image v9.0 build 2337).  The splash screen won&#8217;t display, but the fully functional True Image program should load just fine.  (~25MB needed)
+
+1. Make sure your BIOS supports booting from USB, and set it to do so.
+
+2. Backup your data from the USB drive - it&#8217;ll be wiped clean in the next step.
+
+3. Run the &#8217;<a href="http://h18000.www1.hp.com/support/files/serveroptions/us/download/23839.html">HP Drive Key Boot Utility</a>&#8217; (from Windows) and format the usb drive as follows:
+<ul>
+	<li>Create New or Replace Existing Config</li>
+	<li>Hard Drive</li>
+	<li>Create New Filesystem</li>
+	<li>Click Cancel - no need to go any further with this utility; it&#8217;ll just create unneeded files which you&#8217;ll want to delete - leaving just the boot loader file &#8216;ldlinux.sys&#8217;.</li>
+</ul>
+4. Copy these two files from the True Image boot media &#8216;Recovery Manager&#8217; folder into the usb root directory.  (You may need to install True Image and create a bootable CD or floppy disk if you haven&#8217;t already done so.)
+<ul>
+	<li> kernel.dat</li>
+	<li> ramdisk.dat</li>
+</ul>
+5. Create the file &#8220;syslinux.cfg&#8221; in the usb root directory with the following contents:
+<code> </code>
+<pre>
+    timeout 100
+    default ti9
+    label ti9
+        kernel kernel.dat
+        append initrd=ramdisk.dat vga=788 ramdisk_size=32768 quiet</pre>
+That should do it.  Your USB drive should now boot into True Image.  Happy Imaging.
+
+P.S. Wouldn&#8217;t you know it, after writing all this I decided to try the latest TrueImage Home v10 (build 4,871) and guess what.  That version&#8217;s Boot Builder creates a bootable flash drive with True Image just fine.  Thanks for fixing this Acronis!
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/10/26/last-day-at-openworlduncle/">Last Day at OpenWorld&#8230;uncle</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-26T00:00:00+00:00" pubdate data-updated="true">Oct 26<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">No keynotes today - just sessions and goodbyes.  Lots of attendees have already gone home.
+
+My first session this morning was supposed to be about the Oracle data pump - a newer, faster way to do imports and exports on Oracle db&#8217;s.  What it turned out to be though was an hour of trying really hard to decipher what the speaker was saying.  No offense intended but the presenter had a very thick accent - Indian I think.
+
+Next session was about upgrading to 10g.  There&#8217;s a nify utility which helps simplify an upgrade, automatically dealing with lots of caveats and exceptions: DBUA (Database Upgrade Assistant).
+
+Then two worthwhile sessions on tuning and performance for the db.  First was presented by <a href="http://mikerault.blogspot.com/">Mike Ault</a> from Quest, second came from <a href="http://www.danhotka.com">Dan Hotka</a>.  Lots of recommendations for using the V$ tables, binds, and indexes.
+
+My final session is on geospatial data warehouses and ETL.  This one is still going but topics include Oracle Spatial, ESRI, ETL designs, and error reporting.
+
+Goodbye OpenWorld.  San Francisco was fun with perfect weather!
+<img class="center" src="/images/oraclelounge.jpg" title="Oracle lounge" alt="images">
+  
+Time to go home to the snow.
+<img class="left" src="/images/bouldersnow.jpg" title="Boulder snow" alt="images">
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/10/26/day-4-and-oracle-linux/">Day 4 and Oracle Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-26T00:00:00+00:00" pubdate data-updated="true">Oct 26<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">To my great surprise, Larry Ellison, Oracle CEO and president, spent his hour-long keynote talking about linux.  (I have to wonder how much geeked out tech training these keynote executives need to subject themselves to in order to speak the way they do.  You can sense that they&#8217;re fish out of water, but it really is hard to tell if you don&#8217;t pay close attention.)  He targeted Redhat specifically saying how much cheaper and better the Oracle linux support would be.  Oracle went as far as to demo a 1mb download that allows for a switch from Redhat to &#8220;Unbreakable Linux 2.0&#8221; in minutes.  This is flat out war in my mind.  Oracle sees direct competition in Redhat - most likely stemming from Redhat&#8217;s recent acquisition of middleware software in the form of JBoss.  And remember just a few days ago they said they want to own the whole &#8216;stack&#8217;?  Well the &#8216;stack&#8217; does include the OS after all.  I wouldn&#8217;t be surprised if this is all intended to allow for a quick, easy, and cheap acquisition of Redhat by Oracle.
+
+One might think that attending an Oracle OpenWorld conference (the largest conference in the industry I bet) would have the effect of making one favor Oracle products.  Well, I have to admit that earlier this week I was looking at ways to incorporate some Oracle middleware and take advantage of 10g/11g db features.  After all, I came here for a reason right?  The reason was initially to learn more about Oracle Enterprise db (9i and 10g) in order to help me support, maintain, and develop these products.  I have been trying to move away from Oracle for a while and have kept running into necessary features not available from alternatives.  So I came in with an open mind: maybe Oracle&#8217;s not so bad after all; maybe they have some worthwhile products.  Now, I just have a bad feeling about all that is Oracle.
+
+The afternoon session on &#8216;open source myths and truths&#8217; was interesting.  They showed a perspective on open source I hadn&#8217;t seen - correlating adoption levels in relation to the business requirements that exist for each type of software.  Proprietary software tends to over-develop as adoption levels off, adding features that aren&#8217;t required by the business or end user.  And open source software has historically been lacking in features to the point where it didn&#8217;t meet the business requirements - and so had low adoption as a result.  Well for certain products such as apache and linux, open source  has met the business requirements and has a very strong adoption level.  And for most other product categories, there is a strong trend moving towards higher adoption  levels and more complete feature sets.  The monkey wrench thrown into all of this is the fact that most major companies are acquiring or contributing to open source software.  In the end, the software will be excellent and free.  What we&#8217;ll pay for is added value or service that gets bundled with the software - possibly in the form of proprietary code.
+
+Then &#8216;60 Oracle db security tips in 60 minutes&#8217; was somewhat helpful.  I need to get my hands on this presentation to get the full details on those tips.
+
+And the &#8216;web services state of the union&#8217; largely came to the audience through Oracle-colored glasses.  But there was mention of open standards and flexibility of architecture or language.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/10/25/live-and-learn/">Live and Learn</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-25T00:00:00+00:00" pubdate data-updated="true">Oct 25<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"> I&#8217;m almost ashamed to admit my crappy experience over the last 14 hours or so.  I wasn&#8217;t allowed into the concert (after taking the bus there and all), and I missed out on dinner and drinks.  It turns out that when I first registered, I was confused for someone else with the same name as me.  So I received a lesser conference pass as a result.  So I&#8217;ve apparently been missing out on some &#8220;extreme&#8221; sessions, free lunches, dinners, and of course the concert. Oh well, it was only Elton John after all.
+
+I should have realized all this when my ID had the wrong company - I just figured it was a typo or something.  And this being my first Oracle conference, I didn&#8217;t really know what to expect.  I straightened everything out this morning and I now have the full conference pass with bag, literature, etc.
+
+More product info, marketing from Oracle this morning.  Now listening to Jonathan Schwartz (Sun&#8217;s CEO).  Then I&#8217;m off for drinks at Thirsty Bear to prepare for Larry Ellis&#8217; keynote.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/10/24/openworld-day-3/">OpenWorld, Day 3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-24T00:00:00+00:00" pubdate data-updated="true">Oct 24<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">Mark Hurd kicked off the day talking about how HP is in the middle of some house cleaning as far as their internal IT goes.  They&#8217;re going to fewer technologies, applications, vendors in an effort to simplify and become more efficient.  And they want to use this model for all of their partners, clients as well.
+
+Then Oracle sr. vp talked a lot about middleware (including <a href="http://www.it-eye.nl/weblog/2006/10/24/oracle-open-world-update-6-webcenter-released/">WebCenter</a>) - Oracle products for sales, marketing, communication, etc.  E-Business Suite looks decent for use as an online ordering business solution.
+
+I attended one session labeled &#8220;Content Management for the Enterprise&#8221; which turned out to be about &#8220;Content DB&#8221; which is meant to replace file servers and can be used for email attachments.  This is not a CMS solution from what I could tell - oh well.
+
+Then my brain gave out and needed a break.  I went to lunch at a recommended place called Magnolia&#8217;s - on Haight st. and  Masonic ave.  Took a stroll through Buena Vista Park.  Then I went through the two exhibition halls and listened to John Chamber&#8217;s (Cisco&#8217;s pres and CEO) talk about his vision of the future&#8230;each of us communicating in our preferred media (voice, video, email) and the recipient getting the message in their preferred media.  He  sees the network becoming more integrated with the application&#8230;
+
+This conference has a lot to offer and not enough time to take it all in.
+
+Tonight: Elton John in concert and hopefully more free food and drinks.
+
+<a href="http://www.rittman.net/2006/10/13/oracle-open-world-blogger-meetup-attendee-list/">More OpenWorld blogs here</a>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/10/23/2nd-day-at-openworld/">2nd Day at OpenWorld</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-23T00:00:00+00:00" pubdate data-updated="true">Oct 23<span>rd</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">I&#8217;m starting to see why so many bean bags are made available - sleep deprivation seems common around here.  Quick synopsis for today&#8230;
+
+Morning keynotes from AMD&#8217;s chairman and CEO Hector de J. Ruiz, and Oracle&#8217;s exec vp of server tech Chuck Rozwat.  More hype here, some of it interesting (<a href="http://oss.oracle.com/">open source integration in Oracle</a>), most of it expected.
+
+Data Warehouse session.  Speaker from Keyrus in Toronto claims that <a href="http://en.wikipedia.org/wiki/Extract,_transform,_load" title="Extract, Transform, and Load">ETL</a> is where 90% of our time is spent.  His favorite tool is <a href="http://ibm.ascential.com/products/datastage.html">IBM&#8217;s DataStage</a>, other tools for working with ETL include <a href="http://www.oracle.com/technology/products/warehouse/index.html" title="Oracle Warehouse Builder">OWB</a>, <a href="http://www.informatica.com/products/powercenter/default.htm">Informatica&#8217;s PowerCenter</a>, or just PL/SQL.
+
+Michael Dell&#8217;s keynote shared Oracle&#8217;s theme of integration and commonality across product lines.  The future includes energy reductions, heat reductions, virtualization, and more processor cores.
+
+Patricia McElroy&#8217;s afternoon session on Streams was a bit dry with lots of walk-outs.  What do Streams add to replication?  Notifications, rule-based actions per target, cross-platform targets (Streams can modify Sybase, MS SQL, etc).  It&#8217;s push rather than pull technology&#8230;
+
+Up next: &#8220;OTN Night at the Oasis&#8221;.  Free food, drinks, and lame entertainment.
+
+A more thorough blog about OpenWorld can be found on <a href="http://blogs.oracle.com/otn/">Justin Kestelyn&#8217;s OTN blog</a>; a compilation of related blogs are <a href="http://www.oracle.com/technology/events/oracle-openworld-2006/oow_blogindex.html">here</a>.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/10/22/uml-ajax-collections/">UML, Ajax, and Collections</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-22T00:00:00+00:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">I attended some interesting sessions today&#8230;  <a href="http://www.jeffreyjacobs.com/">Jeff Jacobs</a> gave a nuts and bolts talk on UML do&#8217;s and don&#8217;ts.  He showed how UML is a key component of understanding and communicating business logic/relationships/intelligence.  He emphasized the importance of good design (UML that is correct, complete, etc). UML is what&#8217;s used to generate or describe the database (ER diagrams), and the application (development code).   He mentioned some persistence tools for automatically generating some of the code - tools such as <a href="http://www.hibernate.org/">hibernate</a>.  Jeff recommended <a href="http://www.sparxsystems.com.au/UML_Tutorial.htm">Sparx Systems Architect</a> and <a href="http://www.eclipse.org/">Eclipse</a> with <a href="http://eclipse-plugins.2y.net/eclipse/plugins.jsp?category=UML">UML plugins</a> as tools for building UML diagrams.
+
+I caught the tail end of David Schleis demonstrating ways Ajax can transform a web application&#8217;s look and feel, as well as performance&#8230;into that of a desktop application.
+
+<a href="http://www.stevenfeuerstein.com/">Steven Feuerstein</a> showed off his in-depth knowledge of pl/sql, and specifically his grasp of collections - giving concrete examples of how and when to use different types of collections (he prefers associative arrays for most cases).  He showed lots of ways to improve performance within pl/sql by multiple orders of magnitude - by using the PGA rather than the SGA; with collections; and using some recently added features such as &#8216;bulk collect into&#8217; (with limits).   He&#8217;s got lots of <a href="http://www.oracleplsqlprogramming.com/resources.html">resources</a> and <a href="http://www.oracleplsqlprogramming.com/downloads/demo.zip">demos</a> up and available too.  Steven used <a href="http://www.toadsoft.com/toad_oracle.htm" title="Toad for Oracle">Toad for Oracle</a> for all his examples.
+
+Keynote by Oracle president Charles Phillips was entertaining high level hype.  An interesting concept came up about having a stable core stack (incorporating the latest Oracle buzzword: <a href="http://www.oracle.com/products/middleware/index.html">&#8220;fusion&#8221; middleware</a>) on top of which many applications can be built.  Made me think of a recent slashdot post about <a href="http://linux.slashdot.org/article.pl?sid=06/10/17/159223&amp;from=rss">Oracle Linux</a>.  They also introduced some <a href="http://www.oracle.com/solutions/mid/ebusiness.html" title="Oracle E-Business suite">nifty wizards</a> for creating applications for a small to medium business in a matter of hours or even minutes.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/10/22/first-day-at-openworld/">First Day at OpenWorld</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-22T00:00:00+00:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">This is my first time attending OpenWorld, and I decided to try blogging about the experience as the days go by.  Today is the first day of the conference.  This amazingly large event (41,000 attendees) can seem both well organized and chaotic - depending on on how well information about the conference makes its way to you.  It&#8217;s lunch time right now and I just now feel well informed about where things are located within the 4-block diameter that hosts the conference events.  Now I need to get a grip on what sessions are available for my limited registration category and which are most interesting to me.  One thing I am appreciating as I write this are the comfy bean bag chairs and wifi they have throughout the many lounge areas.  First things first though&#8230;off to lunch.
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/09/20/hello-world/">Thanks Wordpress!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-09-20T00:00:00+00:00" pubdate data-updated="true">Sep 20<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">Big thanks to wordpress for the free blog area!  More to come&#8230;
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/3/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/04/tengo-unas-ganas/">Tengo unas ganas..</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/27/the-holstee-manifesto/">the holstee manifesto..</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/09/24/thefuckitway-com/">thefuckitway.com</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/09/01/decide-to-be-happy-and-the-world-will-beat-a-path/">Decide to be happy</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/19/some-are-better-loved-from-a-distance-for-a/">Some are better..</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("m_leon", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/m_leon" class="twitter-follow-button" data-show-count="false">Follow @m_leon</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Michael -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
