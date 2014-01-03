@@ -4,7 +4,7 @@
   <title><![CDATA[Pressing Words]]></title>
   <link href="http://blog.mikeleon.com/atom.xml" rel="self"/>
   <link href="http://blog.mikeleon.com/"/>
-  <updated>2014-01-03T00:08:03+00:00</updated>
+  <updated>2014-01-03T01:29:26+00:00</updated>
   <id>http://blog.mikeleon.com/</id>
   <author>
     <name><![CDATA[Michael]]></name>
@@ -19,8 +19,7 @@
     <updated>2013-01-04T00:00:00+00:00</updated>
     <id>http://blog.mikeleon.com/blog/2013/01/04/tengo-unas-ganas</id>
     <content type="html"><![CDATA[Tengo unas ganas de agarra a mi maleta, el bulto, los motetes, el equipaje, mi valija, la mochila con todos los juguetes, y..darle la vuelta al mundo&#8230;
-<blockquote></blockquote>
-- <a href="http://grooveshark.com/s/La+Vuelta+Al+Mundo/4tig3n?src=5">La vuelta al mundo by Calle 13</a>
+<object width="250" height="40" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="gsSong3452551351" name="gsSong3452551351"><param name="movie" value="http://grooveshark.com/songWidget.swf" /><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&songID=34525513&style=metal&p=0" /><object type="application/x-shockwave-flash" data="http://grooveshark.com/songWidget.swf" width="250" height="40"><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&songID=34525513&style=metal&p=0" /><span><a href="http://grooveshark.com/search/song?q=Calle%2013%20La%20vuelta%20al%20mundo" title="La vuelta al mundo by Calle 13 on Grooveshark">La vuelta al mundo by Calle 13 on Grooveshark</a></span></object></object>
 ]]></content>
   </entry>
   
@@ -85,28 +84,21 @@
     <updated>2010-10-25T17:07:13+00:00</updated>
     <id>http://blog.mikeleon.com/blog/2010/10/25/the-sooner-you-begin-coding-the-later-you</id>
     <content type="html"><![CDATA[<blockquote><p>The sooner you begin coding the later you finish.</p>
-
 <p>A badly planned project will take three times longer than expected - a well-planned project only twice as long as expected.</p>
-
 <p>There are no good project managers - only lucky ones.</p>
-
 <p>Everyone asks for a strong project manager - when they get him they don&#8217;t want him.</p>
-
 <p>Some projects finish on time in spite of project management best practices.</p>
-
 <p>Fast - cheap - good: you can have any two.</p>
-
 <p>The first 90% of a project takes 90% of the time the last 10% takes the other 90%.</p>
-
 <p>If everything is going exactly to plan, something somewhere is going massively wrong.</p></blockquote>&#8212;<a href="http://blog.falkayn.com/2007_02_01_archive.html">Falkayn&#8217;s Nest: Agile software, Ruby on Rails, ASP.NET, eLearning, technology, politics and marketing stuff</a>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[]]></title>
-    <link href="http://blog.mikeleon.com/blog/2010/04/04/"/>
+    <title type="html"><![CDATA[Bike Skills]]></title>
+    <link href="http://blog.mikeleon.com/blog/2010/04/04/bike-skills/"/>
     <updated>2010-04-04T06:44:39+00:00</updated>
-    <id>http://blog.mikeleon.com/blog/2010/04/</id>
+    <id>http://blog.mikeleon.com/blog/2010/04/04/bike-skills</id>
     <content type="html"><![CDATA[<iframe width="400" height="299" src="http://www.youtube.com/embed/Z19zFlPah-o?wmode=transparent&autohide=1&egm=0&hd=1&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0" frameborder="0" allowfullscreen></iframe><br/>
 ]]></content>
   </entry>
