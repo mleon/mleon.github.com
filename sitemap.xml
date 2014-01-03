@@ -1,10 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://blog.mikeleon.com/blog/2006/09/20/hello-world/</loc>
-        <lastmod>2014-01-02T23:16:45+00:00</lastmod>
-    </url>
-    <url>
         <loc>http://blog.mikeleon.com/blog/2006/10/22/first-day-at-openworld/</loc>
         <lastmod>2014-01-02T23:16:45+00:00</lastmod>
     </url>
@@ -54,10 +50,6 @@
     </url>
     <url>
         <loc>http://blog.mikeleon.com/blog/2008/11/28/how-many-folds/</loc>
-        <lastmod>2014-01-02T23:16:45+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://blog.mikeleon.com/blog/2008/11/28/natalie-raps/</loc>
         <lastmod>2014-01-02T23:16:45+00:00</lastmod>
     </url>
     <url>

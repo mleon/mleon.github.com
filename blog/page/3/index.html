@@ -251,42 +251,6 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2008/11/28/natalie-raps/">Natalie Raps!</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-11-28T00:00:00+00:00" pubdate data-updated="true">Nov 28<span>th</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><iframe src="//player.vimeo.com/video/51268555" width="500" height="333" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/51268555">Natalie&#8217;s Rap (uncensored)</a> from <a href="http://vimeo.com/user12533144">D_Storm</a> on <a href="https://vimeo.com">Vimeo</a>.</p> 
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
       <h1 class="entry-title"><a href="/blog/2008/11/28/how-many-folds/">How Many Folds?</a></h1>
     
     
@@ -423,6 +387,70 @@
   <div class="entry-content"><a href="http://kw-agiledevelopment.blogspot.com/2007/03/agile-requirements-just-in-time-and.html">Agile&#8217;s just in time requirements</a>
 
 <a href="http://steve-yegge.blogspot.com/2006/09/good-agile-bad-agile_27.html">Good/bad agile from Google staff</a>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/11/10/how-to-boot-acronis-true-image-from-a-usb-drive/">How to Boot Acronis True Image From a USB Drive</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-11-10T00:00:00+00:00" pubdate data-updated="true">Nov 10<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">I&#8217;ve struggled quite a bit with this.  But I&#8217;ve always gotten it to work.  This time I decided to save myself from future anguish by documenting the steps.  It might even save you from some extended head scratching.  Here&#8217;s how to use a common usb key / flash drive / thumb drive to boot Acronis True Image (this was done using True Image v9.0 build 2337).  The splash screen won&#8217;t display, but the fully functional True Image program should load just fine.  (~25MB needed)
+
+1. Make sure your BIOS supports booting from USB, and set it to do so.
+
+2. Backup your data from the USB drive - it&#8217;ll be wiped clean in the next step.
+
+3. Run the &#8217;<a href="http://h18000.www1.hp.com/support/files/serveroptions/us/download/23839.html">HP Drive Key Boot Utility</a>&#8217; (from Windows) and format the usb drive as follows:
+<ul>
+	<li>Create New or Replace Existing Config</li>
+	<li>Hard Drive</li>
+	<li>Create New Filesystem</li>
+	<li>Click Cancel - no need to go any further with this utility; it&#8217;ll just create unneeded files which you&#8217;ll want to delete - leaving just the boot loader file &#8216;ldlinux.sys&#8217;.</li>
+</ul>
+4. Copy these two files from the True Image boot media &#8216;Recovery Manager&#8217; folder into the usb root directory.  (You may need to install True Image and create a bootable CD or floppy disk if you haven&#8217;t already done so.)
+<ul>
+	<li> kernel.dat</li>
+	<li> ramdisk.dat</li>
+</ul>
+5. Create the file &#8220;syslinux.cfg&#8221; in the usb root directory with the following contents:
+<code> </code>
+<pre>
+    timeout 100
+    default ti9
+    label ti9
+        kernel kernel.dat
+        append initrd=ramdisk.dat vga=788 ramdisk_size=32768 quiet</pre>
+That should do it.  Your USB drive should now boot into True Image.  Happy Imaging.
+
+P.S. Wouldn&#8217;t you know it, after writing all this I decided to try the latest TrueImage Home v10 (build 4,871) and guess what.  That version&#8217;s Boot Builder creates a bootable flash drive with True Image just fine.  Thanks for fixing this Acronis!
 </div>
   
   

@@ -9,7 +9,7 @@
   <meta name="author" content="Michael">
 
   
-  <meta name="description" content="I&#8217;ve struggled quite a bit with this. But I&#8217;ve always gotten it to work. This time I decided to save myself from future anguish by &hellip;">
+  <meta name="description" content="No keynotes today - just sessions and goodbyes. Lots of attendees have already gone home. My first session this morning was supposed to be about the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -58,70 +58,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/11/10/how-to-boot-acronis-true-image-from-a-usb-drive/">How to Boot Acronis True Image From a USB Drive</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-11-10T00:00:00+00:00" pubdate data-updated="true">Nov 10<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">I&#8217;ve struggled quite a bit with this.  But I&#8217;ve always gotten it to work.  This time I decided to save myself from future anguish by documenting the steps.  It might even save you from some extended head scratching.  Here&#8217;s how to use a common usb key / flash drive / thumb drive to boot Acronis True Image (this was done using True Image v9.0 build 2337).  The splash screen won&#8217;t display, but the fully functional True Image program should load just fine.  (~25MB needed)
-
-1. Make sure your BIOS supports booting from USB, and set it to do so.
-
-2. Backup your data from the USB drive - it&#8217;ll be wiped clean in the next step.
-
-3. Run the &#8217;<a href="http://h18000.www1.hp.com/support/files/serveroptions/us/download/23839.html">HP Drive Key Boot Utility</a>&#8217; (from Windows) and format the usb drive as follows:
-<ul>
-	<li>Create New or Replace Existing Config</li>
-	<li>Hard Drive</li>
-	<li>Create New Filesystem</li>
-	<li>Click Cancel - no need to go any further with this utility; it&#8217;ll just create unneeded files which you&#8217;ll want to delete - leaving just the boot loader file &#8216;ldlinux.sys&#8217;.</li>
-</ul>
-4. Copy these two files from the True Image boot media &#8216;Recovery Manager&#8217; folder into the usb root directory.  (You may need to install True Image and create a bootable CD or floppy disk if you haven&#8217;t already done so.)
-<ul>
-	<li> kernel.dat</li>
-	<li> ramdisk.dat</li>
-</ul>
-5. Create the file &#8220;syslinux.cfg&#8221; in the usb root directory with the following contents:
-<code> </code>
-<pre>
-    timeout 100
-    default ti9
-    label ti9
-        kernel kernel.dat
-        append initrd=ramdisk.dat vga=788 ramdisk_size=32768 quiet</pre>
-That should do it.  Your USB drive should now boot into True Image.  Happy Imaging.
-
-P.S. Wouldn&#8217;t you know it, after writing all this I decided to try the latest TrueImage Home v10 (build 4,871) and guess what.  That version&#8217;s Boot Builder creates a bootable flash drive with True Image just fine.  Thanks for fixing this Acronis!
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -424,42 +360,6 @@ Keynote by Oracle president Charles Phillips was entertaining high level hype.  
 
 
   <div class="entry-content">This is my first time attending OpenWorld, and I decided to try blogging about the experience as the days go by.  Today is the first day of the conference.  This amazingly large event (41,000 attendees) can seem both well organized and chaotic - depending on on how well information about the conference makes its way to you.  It&#8217;s lunch time right now and I just now feel well informed about where things are located within the 4-block diameter that hosts the conference events.  Now I need to get a grip on what sessions are available for my limited registration category and which are most interesting to me.  One thing I am appreciating as I write this are the comfy bean bag chairs and wifi they have throughout the many lounge areas.  First things first though&#8230;off to lunch.
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/09/20/hello-world/">Thanks Wordpress!</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-09-20T00:00:00+00:00" pubdate data-updated="true">Sep 20<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">Big thanks to wordpress for the free blog area!  More to come&#8230;
 </div>
   
   
