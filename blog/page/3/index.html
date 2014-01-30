@@ -9,7 +9,7 @@
   <meta name="author" content="Michael">
 
   
-  <meta name="description" content="companies that are in survival mode don’t do anything that would make them go from being mediocre to being great — because they are too busy just &hellip;">
+  <meta name="description" content="dancing with death, er mountains..and living to brag. ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -58,6 +58,43 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/01/14/wingsuit-base-jumping/">Wingsuit Base Jumping</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-01-14T00:00:00+00:00" pubdate data-updated="true">Jan 14<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="entry-content"><iframe src="http://player.vimeo.com/video/1778399" width="400" height="220" frameborder="0"></iframe><p>dancing with death, er mountains..and living to brag.</p>
+</div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -394,70 +431,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/11/10/how-to-boot-acronis-true-image-from-a-usb-drive/">How to Boot Acronis True Image From a USB Drive</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-11-10T00:00:00+00:00" pubdate data-updated="true">Nov 10<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">I&#8217;ve struggled quite a bit with this.  But I&#8217;ve always gotten it to work.  This time I decided to save myself from future anguish by documenting the steps.  It might even save you from some extended head scratching.  Here&#8217;s how to use a common usb key / flash drive / thumb drive to boot Acronis True Image (this was done using True Image v9.0 build 2337).  The splash screen won&#8217;t display, but the fully functional True Image program should load just fine.  (~25MB needed)
-
-1. Make sure your BIOS supports booting from USB, and set it to do so.
-
-2. Backup your data from the USB drive - it&#8217;ll be wiped clean in the next step.
-
-3. Run the &#8217;<a href="http://h18000.www1.hp.com/support/files/serveroptions/us/download/23839.html">HP Drive Key Boot Utility</a>&#8217; (from Windows) and format the usb drive as follows:
-<ul>
-	<li>Create New or Replace Existing Config</li>
-	<li>Hard Drive</li>
-	<li>Create New Filesystem</li>
-	<li>Click Cancel - no need to go any further with this utility; it&#8217;ll just create unneeded files which you&#8217;ll want to delete - leaving just the boot loader file &#8216;ldlinux.sys&#8217;.</li>
-</ul>
-4. Copy these two files from the True Image boot media &#8216;Recovery Manager&#8217; folder into the usb root directory.  (You may need to install True Image and create a bootable CD or floppy disk if you haven&#8217;t already done so.)
-<ul>
-	<li> kernel.dat</li>
-	<li> ramdisk.dat</li>
-</ul>
-5. Create the file &#8220;syslinux.cfg&#8221; in the usb root directory with the following contents:
-<code> </code>
-<pre>
-    timeout 100
-    default ti9
-    label ti9
-        kernel kernel.dat
-        append initrd=ramdisk.dat vga=788 ramdisk_size=32768 quiet</pre>
-That should do it.  Your USB drive should now boot into True Image.  Happy Imaging.
-
-P.S. Wouldn&#8217;t you know it, after writing all this I decided to try the latest TrueImage Home v10 (build 4,871) and guess what.  That version&#8217;s Boot Builder creates a bootable flash drive with True Image just fine.  Thanks for fixing this Acronis!
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -475,6 +448,10 @@ P.S. Wouldn&#8217;t you know it, after writing all this I decided to try the lat
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/01/30/snow-laughing-matter/">Snow Laughing Matter</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/01/04/tengo-unas-ganas/">Tengo Unas Ganas..</a>
       </li>
     
@@ -488,10 +465,6 @@ P.S. Wouldn&#8217;t you know it, after writing all this I decided to try the lat
     
       <li class="post">
         <a href="/blog/2011/09/01/decide-to-be-happy-and-the-world-will-beat-a-path/">Decide to Be Happy</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/07/19/some-are-better-loved-from-a-distance-for-a/">Some Are Better..</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Pressing Words]]></title>
   <link href="http://blog.mikeleon.com/atom.xml" rel="self"/>
   <link href="http://blog.mikeleon.com/"/>
-  <updated>2014-01-03T01:29:26+00:00</updated>
+  <updated>2014-01-30T02:42:28+00:00</updated>
   <id>http://blog.mikeleon.com/</id>
   <author>
     <name><![CDATA[Michael]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Snow Laughing Matter]]></title>
+    <link href="http://blog.mikeleon.com/blog/2014/01/30/snow-laughing-matter/"/>
+    <updated>2014-01-30T02:38:08+00:00</updated>
+    <id>http://blog.mikeleon.com/blog/2014/01/30/snow-laughing-matter</id>
+    <content type="html"><![CDATA[<p>Dreaming of a beach somewhere..</p>
+
+<p><img src="http://blog.mikeleon.com/images/praying_for_snow.jpg"/></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tengo Unas Ganas..]]></title>
@@ -242,16 +253,6 @@
     <updated>2009-01-24T00:00:00+00:00</updated>
     <id>http://blog.mikeleon.com/blog/2009/01/24/obama-weekly-address</id>
     <content type="html"><![CDATA[<div class="entry-content"><iframe width="400" height="300" src="http://www.youtube.com/embed/RDfpd8GV9dI?wmode=transparent&autohide=1&egm=0&hd=1&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0" frameborder="0" allowfullscreen></iframe><p>01/24/09: President Obama&#8217;s Weekly Address (via <a href="http://youtube.com/user/whitehouse">whitehouse</a>)</p>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Wingsuit Base Jumping]]></title>
-    <link href="http://blog.mikeleon.com/blog/2009/01/14/wingsuit-base-jumping/"/>
-    <updated>2009-01-14T00:00:00+00:00</updated>
-    <id>http://blog.mikeleon.com/blog/2009/01/14/wingsuit-base-jumping</id>
-    <content type="html"><![CDATA[<div class="entry-content"><iframe src="http://player.vimeo.com/video/1778399" width="400" height="220" frameborder="0"></iframe><p>dancing with death, er mountains..and living to brag.</p>
 </div>
 ]]></content>
   </entry>
