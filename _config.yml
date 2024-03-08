@@ -38,6 +38,7 @@ author: Michael
 # theme: minima
 theme: Hamilton
 # theme: jekyll-theme-clean-blog
+skin: midnight
 plugins:
   - jekyll-feed
 

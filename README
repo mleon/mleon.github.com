@@ -13,3 +13,7 @@ jekyll serve # builds and serves up static content
 deploy the _sites/* contents to the main branch
 
 # for embedding in github pages see: https://github.com/nathancy/jekyll-embed-video?tab=readme-ov-file
+
+# for github actions workflow for deploying jekyll with guthub pages see:
+#   https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml
+#   https://jekyllrb.com/docs/continuous-integration/github-actions/
