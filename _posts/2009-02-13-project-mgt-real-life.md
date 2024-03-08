@@ -9,5 +9,4 @@ type: post
 published: true
 meta:
 ---
-<div class="entry-content"><object style="margin:0px" width="400" height="334"><param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=projectmanagement-1231882285991625-3&amp;stripped_title=5-key-chart-project-management-tm-methodology-presentation" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://static.slideshare.net/swf/ssplayer2.swf?doc=projectmanagement-1231882285991625-3&amp;stripped_title=5-key-chart-project-management-tm-methodology-presentation" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="400" height="334"></embed></object>
-</div>
+<div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/jmcmahon89/5-key-chart-project-management-tm-methodology-presentation" title="5 Key Chart Project Management (TM) Methodology" target="_blank">5 Key Chart Project Management (TM) Methodology</a></strong> from <strong><a href="https://www.slideshare.net/jmcmahon89" target="_blank">jmcmahon89</a></strong></div>
