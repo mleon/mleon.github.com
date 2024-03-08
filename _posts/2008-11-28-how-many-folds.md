@@ -9,5 +9,4 @@ type: post
 published: true
 meta:
 ---
-<div class="entry-content"><iframe width="400" height="323" src="http://www.youtube.com/embed/Qat9FeJ6qIg?wmode=transparent&autohide=1&egm=0&hd=1&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0" frameborder="0" allowfullscreen></iframe><p>How many folds in the end?</p>
-</div>
+{% include youtube.html id="Qat9FeJ6qIg" %}

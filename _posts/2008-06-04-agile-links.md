@@ -11,5 +11,4 @@ meta:
   _elasticsearch_indexed_on: '2008-06-05 04:30:21'
 ---
 <a href="http://kw-agiledevelopment.blogspot.com/2007/03/agile-requirements-just-in-time-and.html">Agile's just in time requirements</a>
-
 <a href="http://steve-yegge.blogspot.com/2006/09/good-agile-bad-agile_27.html">Good/bad agile from Google staff</a>
