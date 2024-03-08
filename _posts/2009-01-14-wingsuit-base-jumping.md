@@ -8,6 +8,6 @@ status: publish
 type: post
 published: true
 meta:
+vimeoId: 1778399
 ---
-<div class="entry-content"><iframe src="http://player.vimeo.com/video/1778399" width="400" height="220" frameborder="0"></iframe><p>dancing with death, er mountains..and living to brag.</p>
-</div>
+{% include vimeoPlayer.html id=page.vimeoId %}
