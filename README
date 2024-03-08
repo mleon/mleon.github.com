@@ -1,25 +1,15 @@
 # main github repo used for hosting a wordpress blog
 
-# steps to import and manage the octopress blog
-# 
+# steps to manage the blog, now using jekyll
+git checkout source
 
-# gem install octopress
-# fix FrozenError: https://github.com/octopress/octopress/pull/187/commits/445dddbbd454560f450517c5505018d707c2964c
-# octopress deploy init git git@github.com:mleon/mleon.github.com.git
-# vi _deploy.yml # change master to source branch
-# octopress deploy pull <dir_to_pull_to>
-# edit Gemfile *and* _config.yml as per https://github.com/octopress/octopress
-# rm Gemfile.lock
-# octopress unpublish 2006
-
-# scrap all the above and switch to jekyll
 gem install jekyll
-gem install hamilton
+gem install hamilton # may need to edit *.scss to use 'calc(x / y)'
 
-jekyll build
-jekyll serve
+jekyll build # builds the static content under _sites
+jekyll serve # builds and serves up static content
 
 # deploy to github
-jekyll build and deploy the _sites contents to the master branch
+deploy the _sites/* contents to the main branch
 
 # for embedding in github pages see: https://github.com/nathancy/jekyll-embed-video?tab=readme-ov-file
